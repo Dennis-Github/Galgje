@@ -19,12 +19,17 @@ def hangman():
 
 
    # getting user input
+while len(word_letters) > 0:
 user_letter = input('Guess a letter: ').upper()
 if user_letter in alphabet - used_letters:
   used_letters.add(user_letter)
   if user_letter in word_letters:
     word_letters.remove(user_letter)
 
+elif user_letter in used_letters:
+  print('Sorry! You have already used this letter! Please try again!')
+else:
+  print('Invalid character! Please try again!')   
 
 
 
