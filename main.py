@@ -22,6 +22,9 @@ def hangman():
 while len(word_letters) > 0:
   #letters already used
   print('You have used these letters: ',' '.join(used_letters))
+
+  #what current word is with '-' for letters not known
+  word_list = [letter if letter in used_letters else '-' for letter in word]
 user_letter = input('Guess a letter: ').upper()
 if user_letter in alphabet - used_letters:
   used_letters.add(user_letter)
