@@ -18,9 +18,16 @@ def hangman():
     used_letters = set() #what the user has guessed
 
 
- # getting user input
-user_input = input('Type something:')
+   # getting user input
+user_letter = input('Guess a letter: ').upper()
+
+
+
+
+user_input = input('Type something..')
 print(user_input)
+
+
 
 
     
