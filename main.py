@@ -10,5 +10,10 @@ def get_valid_word(words):
     return word.upper()
 
 
+def hangman():
+    word = get_valid_word(words)
+    word_letters = set(word)  # what's already been guessed
+    
+
 
     
