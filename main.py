@@ -52,11 +52,7 @@ def hangman():
     else:
        print('YAY! Well done! You guessed the word, congratulations!', word, '!!')
 
-
-
-            
-
-   
+print('Welcome to Hangman! Have fun!')            
 
 if __name__ == '__main__':
     hangman()
