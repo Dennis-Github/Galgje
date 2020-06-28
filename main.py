@@ -20,6 +20,8 @@ def hangman():
 
    # getting user input
 user_letter = input('Guess a letter: ').upper()
+if user_letter in alphabet - used_letters:
+  used_letters.add(user_letter)
 
 
 
