@@ -38,13 +38,13 @@ def hangman():
 
             else:
                 lives = lives - 1  # takes away a life if wrong
-                print('\nYour letter,', user_letter, 'is not in the word. Please try again!')
+                print('\nYour letter,', user_letter, 'is not in the word!')
 
         elif user_letter in used_letters:
-            print('\nYou have already used that letter.')
+            print('\nYou have already used that letter!')
 
         else:
-            print('\nThat is not a valid character.')
+            print('\nThat is not a valid character!')
  
    # gets here when len(word_letters) == 0 OR when lives == 0
     if lives == 0:
