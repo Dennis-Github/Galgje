@@ -15,8 +15,12 @@ def hangman():
     word = get_valid_word(words)
     word_letters = set(word)  # what's in the word
     alphabet = set(string.ascii_uppercase)
-    used_letters = set(). #what the user has guessed
+    used_letters = set() #what the user has guessed
 
+
+ # getting user input
+user_input = input('Type something:')
+print(user_input)
     
 
 
