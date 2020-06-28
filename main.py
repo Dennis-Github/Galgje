@@ -21,6 +21,8 @@ def hangman():
  # getting user input
 user_input = input('Type something:')
 print(user_input)
+
+
     
 
 
